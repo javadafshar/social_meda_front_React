@@ -1,0 +1,124 @@
+/** @format */
+
+.NavebarContainer{
+  height: 37px;
+  width: 100%;
+  background-color: rgb(2, 135, 155);
+  color: white;
+  display: flex;
+  align-items: center;
+  box-shadow: 1px 2px 3px rgb(233, 233, 233);
+  margin-bottom: 1px;
+  position: sticky;
+  top: 0;z-index: 1;
+  .timer {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid whitesmoke;
+
+    display: flex;
+
+    flex: 1.17;
+  }
+
+  .mid {
+    display: flex;
+    flex: 3.5;
+    margin: auto;
+    border-right: 1px solid whitesmoke;
+
+    .search {
+      display: flex;
+      height: 23px;
+      border-radius: 25px;
+      margin: auto;
+      width: 60%;
+      background-color: whitesmoke;
+      align-items: center;
+      .searchicon {
+        color: blue;
+        cursor: pointer;
+      }
+      .searchinput {
+        width: calc(98%);
+        height: 22px;
+        border: 0.1px solid transparent;
+        // padding: 3px;
+        align-items: center;
+        // padding-left: 1.5%;
+        background-color: transparent;
+      }
+    }
+    .searchinput:focus {
+      outline: none;
+    }
+  }
+  .iconssec {
+    display: flex;
+    flex-direction: row;
+    flex: 1.3;
+    align-items: center;
+    padding-left: 5px;
+    justify-content: center;
+    .item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+     // justify-content: end;
+      float: right;
+      .counter {
+        text-align: center;
+        margin: auto;
+        align-items: center;
+        align-content: center;
+        height: 13px;
+        width: 13px;
+        line-height: 0.7;
+        border-radius: 50%;
+        background-color: red;
+        color: rgb(255, 255, 255);
+      }
+      .icon {
+        margin-left: 5px;
+        color: white;
+      }
+    }
+
+    .avator {
+      border: 1px dotted white;
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .NavebarContainer {
+    .timer {
+      flex: 0.9;
+      font-size: 14px;
+    }
+    .mid {
+      flex: 3;
+      .search {
+        width: 90%;
+      }
+    }
+    .iconssec {
+      flex: 3;
+      justify-content: center;
+      .item {
+        position: relative;
+        justify-content: center;
+        #ic {
+          position: absolute;
+          right: 5px;
+          top: 19px;
+          color: rgb(20, 20, 20);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,142 @@
+/** @format */
+.ProfileContainer {
+  display: flex;
+  .LeftSide {
+    display: flex;
+    flex: 1.17;
+    text-align: center;
+    flex-shrink: 1;
+    width: 300px;
+    position: sticky;
+    top: 38px;
+    height: calc(100vh - 38px);
+    // overflow-y: auto;
+    .toggleLeftSideButton {
+      position: absolute;
+      top: 15px;
+      left: 140px;
+    }
+  }
+  .mainProfile {
+    display: flex;
+    flex: 4.8;
+    flex-direction: column;
+    .topprofile {
+      display: flex;
+      width: 100%;
+      height: 250px;
+      // position: relative;
+      box-shadow: -2px 2px 3px rgb(237, 236, 236);
+      .avatar {
+        position: absolute;
+        left: 45%;
+        top: 175px;
+        width: 350px;
+        border-radius: 50%;
+        .avatarimg {
+          width: 130px;
+          height: 130px;
+          border: 3px solid rgb(163, 199, 248);
+        }
+      }
+      .wallpaper {
+        width: 100%;
+        img {
+          width: 100%;
+          height: 250px;
+        }
+      }
+    }
+
+    .RandPost {
+      display: flex;
+      flex-direction: row;
+      .RightSide {
+        display: flex;
+        flex-direction: column;
+        flex: 1.3;
+        background-color: rgb(255, 254, 254);
+        text-align: center;
+        box-shadow: -2px 2px 3px rgb(237, 236, 236);
+        flex-shrink: 0;
+        width: 300px;
+        position: sticky;
+        top: 37px;
+        height: calc(100vh - 37px);
+        overflow-y: auto;
+        //justify-content: center;
+        .informations {
+          text-align: left;
+          margin-left: 1rem;
+        }
+
+        .Userstatuse {
+          margin-left: 3px;
+          display: flex;
+          color: rgb(1, 85, 180);
+          font-size: large;
+          justify-content: left;
+          padding: 5px 0px 5px 5px;
+          width: 98%;
+          background-color: white;
+          box-shadow: 1px 1px 3px rgb(233, 233, 233);
+        }
+        .onlineuser {
+          color: rgb(10, 10, 10);
+          margin: 5% 8% 1% 10%;
+          display: flex;
+          align-items: center;
+          position: relative;
+        }
+      }
+      .button {
+        flex: 3.5;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .ProfileContainer {
+    .LeftSide {
+      display: none;
+    }
+    .mainProfile {
+      .topprofile {
+        .avatar {
+          position: absolute;
+          left: 35%;
+        }
+      }
+      .RandPost {
+        width: 95%;
+        .RightSide {width: 100%;
+          /*  .avatar {
+        } */
+          display: flex;
+          flex-direction: column;
+          flex: 0;
+          background-color: rgb(255, 254, 254);
+          text-align: center;
+          .Userstatuse {
+            align-items: center;
+            font-size: 0.6rem;
+            font-weight: bold;
+            padding: 5px 0px 5px 1px;
+            .icon {
+              margin: 0px;
+              font-size: 1.2rem;
+            }
+          }
+          .onlineuser {
+            margin: 5% 8% 1% 10%;
+            display: flex;
+            // flex-direction: column;
+            //align-items: center;
+            //position: relative;
+          }
+        }
+      }
+    }
+  }
+}

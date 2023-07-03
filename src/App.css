@@ -1,0 +1,10 @@
+/** @format */
+
+:root {
+  --maincolor-color: rgb(51, 186, 213);
+}
+
+* {
+  font-family: '';
+  position: relative;
+}

@@ -1,0 +1,22 @@
+/** @format */
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  //
+
+}
+*::-webkit-scrollbar {
+  display: none;
+}
+
+@media screen and (max-width: 916px) {
+  * {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  *::-webkit-scrollbar {
+    display: none;
+  }
+}

@@ -1,0 +1,122 @@
+/** @format */
+
+.navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+.HomeContainer {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-self: center;
+  background-color: rgb(253 253 253);
+  //height: calc(100vh - 25px);
+  //overflow: hidden;
+  position: relative;
+  //
+  .LeftSide {
+    display: flex;
+    flex: 1.17;
+    text-align: center;
+    flex-shrink: 0;
+    width: 300px;
+    position: sticky;
+    top: 37px;
+    height: 100vh;
+    overflow-y: auto;
+  }
+  .mid {
+    display: flex;
+    flex: 3.5;
+    flex-direction: column;
+    background-color: rgb(253, 253, 253);
+    margin: 20px auto 10px auto;
+
+    .addpost {
+      width: 90%;
+      height: 150px;
+      box-shadow: 2px 2px 1px rgb(59, 59, 58);
+      overflow: scroll;
+    }
+  }
+
+  .RightSide {
+    display: flex;
+    flex-direction: column;
+    flex: 1.3;
+    background-color: rgb(255, 254, 254);
+    text-align: center;
+    box-shadow: -2px 2px 3px rgb(237, 236, 236);
+    flex-shrink: 0;
+    width: 300px;
+    position: sticky;
+    top: 37px;
+    height: calc(100vh - 37px);
+    overflow-y: auto;
+    //justify-content: center;
+    .Userstatuse {
+      display: flex;
+      color: rgb(1, 85, 180);
+      font-size: large;
+      justify-content: center;
+      padding: 5px 0px 5px 5px;
+      width: 98%;
+      background-color: white;
+      box-shadow: 1px 1px 3px rgb(233, 233, 233);
+    }
+    .onlineuser {
+      color: rgb(10, 10, 10);
+      margin: 5% 8% 1% 10%;
+      display: flex;
+      align-items: center;
+      position: relative;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    width: 100%;
+  }
+  .HomeContainer {
+    .RightSide {
+      display: none;
+      /*  display: flex;
+      flex-direction: column;
+      flex: 0;
+      background-color: rgb(255, 254, 254);
+      text-align: center;
+      .Userstatuse {
+        align-items: center;
+        font-size: 0.6rem;
+        font-weight: bold;
+        padding: 5px 0px 5px 1px;
+        .icon {
+          margin: 0px;
+          font-size: 1.2rem;
+        }
+      }
+      .onlineuser {
+        margin: 5% 8% 1% 10%;
+        display: flex;
+        // flex-direction: column;
+        //align-items: center;
+        //position: relative;
+      }
+       */
+    }
+    .LeftSide {
+      display: none;
+    }
+    .mid {
+      width: 100%;
+      .Addpost {
+        .down {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+}
